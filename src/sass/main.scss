@@ -1,9 +1,11 @@
 
 // Import typography
-@import 'base/_variables.scss';
+@import 'base/_variables';
 @import 'base/_typography';
 @import 'base/_base';  
+@import 'base/_button';
 // Import components
-@import 'components/_header.scss';
-@import 'components/_animation.scss';
-@import 'components/_block1.scss';
+@import 'components/_header';
+@import 'components/_animation';
+@import 'components/_block1';
+@import 'components/_block2';

@@ -1,5 +1,4 @@
-//File Empty
-.figure-main{
+.figure-animation{
     img{
         transition: all 100ms linear;
         &:hover,:focus{
@@ -8,5 +7,30 @@
             
         }
     }
-
+}
+.btn-animation{
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    &:before{
+        background: var(--secondary-color);
+        bottom: 0;
+        content: "";
+        height: 4px;
+        left: 51%;
+        position: absolute;
+        right: 51%;
+        transition-property: left, right;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+        z-index: -1;    }
+    &:hover{
+        &:before{
+            left: 0;
+            right: 0;
+        }
+    }
 }
