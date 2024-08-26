@@ -1,0 +1,24 @@
+/* src/sass/base/_typography.scss */
+  @font-face {
+    font-family: 'open_sanscondensed_light';
+    src: url('../assets/fonts/opensanscondensed_light/OpenSans-CondLight-webfont.eot');
+    src: url('../assets/fonts/opensanscondensed_light/OpenSans-CondLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/opensanscondensed_light/OpenSans-CondLight-webfont.woff2') format('woff2'),
+         url('../assets/fonts/opensanscondensed_light/OpenSans-CondLight-webfont.woff') format('woff'),
+         url('../assets/fonts/opensanscondensed_light/OpenSans-CondLight-webfont.ttf') format('truetype'),
+         url('../assets/fonts/opensanscondensed_light/OpenSans-CondLight-webfont.svg#open_sanscondensed_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../assets/fonts/opensans_regular/OpenSans-Regular-webfont.eot');
+  src: url('../assets/fonts/opensans_regular/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/opensans_regular/OpenSans-Regular-webfont.woff2') format('woff2'),
+       url('../assets/fonts/opensans_regular/OpenSans-Regular-webfont.woff') format('woff'),
+       url('../assets/fonts/opensans_regular/OpenSans-Regular-webfont.ttf') format('truetype'),
+       url('../assets/fonts/opensans_regular/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

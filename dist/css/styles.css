@@ -1,0 +1,25 @@
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/main.scss ***!
+  \*************************************************************************************************************/
+/* src/sass/base/_typography.scss */
+@font-face {
+  font-family: "open_sanscondensed_light";
+  src: url(/174e50ee47bb9f60cba9.eot);
+  src: url(/174e50ee47bb9f60cba9.eot?#iefix) format("embedded-opentype"), url(/1a00b1552a100e74a0ce.woff2) format("woff2"), url(/d661598eed4a6b04b24b.woff) format("woff"), url(/f7dfdd95a3c0a67bffcb.ttf) format("truetype"), url(/305953d24ce01725e837.svg#open_sanscondensed_light) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "open_sansregular";
+  src: url(/1cc5ba1ac2937f126aa2.eot);
+  src: url(/1cc5ba1ac2937f126aa2.eot?#iefix) format("embedded-opentype"), url(/3ec1f4ca1309ff48ba4c.woff2) format("woff2"), url(/506fade0dc5d5db0a596.woff) format("woff"), url(/69c34e06363409223dd1.ttf) format("truetype"), url(/fc343ace644797a4aa7d.svg#open_sansregular) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "open_sanscondensed_light", sans-serif;
+}
+
+strong, b, .text-bold {
+  font-family: "open_sansregular", sans-serif;
+}
