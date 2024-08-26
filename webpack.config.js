@@ -1,10 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { HotModuleReplacementPlugin } = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: './src/js/index.js', // El punto de entrada es tu archivo JS
+  entry: './src/js/index.js', // Archivo de entrada
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -13,7 +12,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/, 
+        test: /\.scss$/, // Maneja archivos Sass
         use: [
           MiniCssExtractPlugin.loader, // Extrae CSS a un archivo separado
           'css-loader', 
@@ -21,27 +20,27 @@ module.exports = {
         ],
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        test: /\.(woff|woff2|eot|ttf|otf|svg)$/, // Maneja fuentes
         use: [
           {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'fonts/', // Directorio de salida para las fuentes
-              publicPath: 'fonts/'  // Directorio público para las fuentes
+              outputPath: 'fonts/', // Directorio de salida para fuentes
+              publicPath: 'fonts/' // Directorio público para fuentes
             },
           },
         ],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/, // Para manejar imágenes
+        test: /\.(png|svg|jpg|jpeg|gif)$/, // Maneja imágenes
         use: [
           {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'images/', // Directorio de salida para las imágenes
-              publicPath: 'images/'  // Directorio público para las imágenes
+              outputPath: 'images/', // Directorio de salida para imágenes
+              publicPath: 'images/' // Directorio público para imágenes
             },
           },
         ],
@@ -53,7 +52,6 @@ module.exports = {
       template: './src/index.html',
       inject: 'body', // Inserta los scripts al final del body
     }),
-    new HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin({
       filename: 'css/styles.css', // Nombre del archivo CSS generado
     }),

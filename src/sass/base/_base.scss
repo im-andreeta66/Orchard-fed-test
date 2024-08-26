@@ -15,10 +15,12 @@ body {
     font-family: 'open_sanscondensed_light', sans-serif;
     font-size: 1.6rem;
 	font-weight: 100;
+	padding-top: 5rem;
     position: relative;
 	transition: all 90ms linear;
 	@media #{$m1400} {
 		font-size:1.8rem ;
+		padding-top: 0;
 	}
 }
 a {
@@ -44,5 +46,14 @@ strong,b, .text-bold, .btn{
 .container{
 	@media #{$m1400} {
 		max-width: 1200px;
+	}
+}
+
+main{
+	&.m-top{
+		margin-top: 2rem;
+		@media #{$m1200} {
+			margin-top: 15rem;
+		}
 	}
 }
