@@ -54,4 +54,5 @@ This project is a webpage that uses Bootstrap 5 for design and Sass for custom s
    npm install
 
 2. **Run Wepack**:
+    ```bash
     npx webpack serve
