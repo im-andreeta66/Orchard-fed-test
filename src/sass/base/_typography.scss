@@ -22,3 +22,39 @@
   font-weight: normal;
   font-style: normal;
 }
+.text{
+  &-pink{
+    color: var(--secondary-color);
+  }
+  &-highlight{
+    border-bottom: 1px solid var(--primary-color);
+    font-weight: 100;
+    font-size: 2rem;
+    line-height: 160%;
+    letter-spacing: 1px;
+    @media #{$m1200} {
+      font-size: 2.3rem;
+      line-height: 200%;
+    }
+    @media #{$m1400} {
+      font-size: 2.4rem;
+    }
+  }
+  &-md{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    @media #{$m1400} {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+    }
+  }
+  &-lg{
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    @media #{$m1400} {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  }
+
+}
